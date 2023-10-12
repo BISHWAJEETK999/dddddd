@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Character NFT template</title>
+    <meta property="og:title" content="Character NFT template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-thq="thq-navbar" class="home-navbar">
+          <div class="home-container01">
+            <img
+              alt="image"
+              src="public/5ef987561883fad47e90211c_ideaflow%20white%201-3x-200h.png"
+              class="home-image"
+            />
+          </div>
+          <div
+            data-thq="thq-navbar-nav"
+            data-role="Nav"
+            class="home-desktop-menu"
+          >
+            <nav
+              data-thq="thq-navbar-nav-links"
+              data-role="Nav"
+              class="home-nav"
+            >
+              <a
+                href="https://www.ideaflow.io/#"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link button-clean button"
+              >
+                Home
+              </a>
+            </nav>
+          </div>
+          <div data-thq="thq-navbar-btn-group" class="home-btn-group">
+            <div class="home-socials">
+              <button class="social button">
+                <img
+                  alt="image"
+                  src="public/Icons/twitter.svg"
+                  class="home-image01"
+                />
+              </button>
+              <button class="social button">
+                <img
+                  alt="image"
+                  src="public/Icons/discord.svg"
+                  class="home-image02"
+                />
+              </button>
+            </div>
+            <a
+              href="https://www.ideaflow.io/careers"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-view button"
+            >
+              We're Hiring! JS, iOS +
+            </a>
+            <a
+              href="https://pleasecontact@ideaflow.io"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link01 button-clean button"
+            >
+              Contact
+            </a>
+          </div>
+          <div data-thq="thq-burger-menu" class="home-burger-menu">
+            <button type="submit" class="button home-button">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+            <div
+              data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
+              class="home-nav1"
+            >
+              <div class="home-container02">
+                <span class="home-logo">Character</span>
+                <div data-thq="thq-close-menu" class="home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
+                class="home-nav2"
+              >
+                <span class="home-text">About</span>
+                <span class="home-text001">Features</span>
+                <span class="home-text002">Pricing</span>
+                <span class="home-text003">Team</span>
+                <span class="home-text004">Blog</span>
+              </nav>
+              <div class="home-container03">
+                <button class="home-login button">Login</button>
+                <button class="button">Register</button>
+              </div>
+            </div>
+            <div class="home-icon-group">
+              <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
+                <path
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg
+              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg
+              ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </header>
+        <section class="home-hero">
+          <div class="home-heading">
+            <h1 class="home-header">The Intelligence Amplification Company</h1>
+          </div>
+          <p class="home-caption">
+            <span class="home-text005">
+              We’re creating an ecosystem for humans and machines to work
+              together to solve the world’s most important problems – starting
+              with a notebook that augments your intelligence.
+            </span>
+            <br />
+          </p>
+          <div class="home-buttons">
+            <a
+              href="http://ideaflow.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-view1 button"
+            >
+              Try Ideaflow Notes
+            </a>
+            <button class="home-learn button-clean button">
+              <a
+                href="https://apps.apple.com/us/app/ideaflow-notes/id6463830566"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <span></span>
+                <span>iOS</span>
+              </a>
+            </button>
+            <a
+              href="https://onboarding.ideaflow.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-learn1 button-clean button"
+            >
+              Guide
+            </a>
+            <a
+              href="https://twitter.com/IdeaFlowGraphs"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-learn2 button-clean button"
+            >
+              Twitter
+            </a>
+            <a
+              href="https://kaib430d7vl.typeform.com/to/cg7ZCvD9"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-learn3 button-clean button"
+            >
+              Newsletter
+            </a>
+          </div>
+        </section>
+        <section class="home-description">
+          <img
+            alt="image"
+            src="public/hero-divider-1300h.png"
+            loading="eager"
+            class="home-divider-image"
+          />
+          <div class="home-container04">
+            <p class="home-paragraph">
+              <span class="home-text009">
+                Connecting people with matching puzzle pieces
+              </span>
+              <br class="home-text010" />
+              <br class="home-text011" />
+              <span class="home-text012">
+                There are millions of scientists trying to cure the likes of
+                AIDS and Alzheimer’s. Maybe the cure is currently separated in
+                different people’s heads. How can we design the web so that
+                these half-formed solutions can come together?
+              </span>
+              <br class="home-text013" />
+              <br />
+              <span class="home-text015">
+                - Sir Tim Berners-Lee, Creator of the Web
+              </span>
+              <br class="home-text016" />
+            </p>
+            <div class="home-container05">
+              <div class="home-container06">
+                <div class="home-container07">
+                  <div class="home-container08">
+                    <div class="home-container09"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-description1">
+                <div class="home-content"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-cards">
+          <div class="home-row"></div>
+          <div class="home-container10">
+            <div class="home-container11">
+              <div class="home-card">
+                <h2 class="home-header1">
+                  <span class="home-text017">
+                    The auto-suggest layer for human thinking
+                  </span>
+                  <br />
+                  <br />
+                  <br />
+                </h2>
+                <div class="home-content1">
+                  <p class="home-description2">
+                    <br class="home-text021" />
+                    <br class="home-text022" />
+                    <br class="home-text023" />
+                    <br class="home-text024" />
+                    <br class="home-text025" />
+                    <br class="home-text026" />
+                    <span class="home-text027">
+                      Connect fragments of information from siloed sources
+                      faster than ever before.
+                    </span>
+                    <br class="home-text028" />
+                    <br class="home-text029" />
+                    <span class="home-text030">
+                      Your organization's collective memory at your fingertips.
+                    </span>
+                  </p>
+                </div>
+                <a
+                  href="https://docs.google.com/forms/d/1yhBzEkGB_nyDx9mVOQHsXvF3G1ovK4_SfAvh0TYAUds/edit"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link03 button"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+            <img
+              alt="image"
+              src="public/front-view-young-male-red-sweater-with-concentrated-expression-black-wall-500h.jpg"
+              class="home-image03"
+            />
+          </div>
+        </section>
+        <section class="home-collection">
+          <div class="home-main">
+            <div class="home-card1">
+              <div class="home-image04">
+                <img
+                  alt="image"
+                  src="public/5efac0a9bd965c6f659d9afb_avatar%20mw-400h.png"
+                  class="home-image05"
+                />
+              </div>
+              <div class="home-content2">
+                <span class="home-caption1">
+                  <span>Marty Weiner</span>
+                  <br class="home-text032" />
+                  <br />
+                  <span>Former CTO, Reddit</span>
+                  <br class="home-text035" />
+                  <br />
+                  <span>Ideaflow Advisor</span>
+                  <br />
+                  <br />
+                  <br />
+                  <span>
+                    “A key step to realizing the potential of the Web as a
+                    medium for collective intelligence.”
+                  </span>
+                  <br class="home-text042" />
+                  <br />
+                  <br class="home-text044" />
+                  <br />
+                  <br />
+                </span>
+              </div>
+            </div>
+            <div class="home-card2">
+              <div class="home-image06">
+                <div class="home-container12">
+                  <img
+                    alt="image"
+                    src="public/5efbe6fc6697d411b88e0cc6_jd-400h.png"
+                    class="home-image07"
+                  />
+                </div>
+              </div>
+              <div class="home-content3">
+                <span class="home-caption2">
+                  <span>John Devadoss</span>
+                  <br class="home-text048" />
+                  <br />
+                  <span>Founding Director, Microsoft Digital Consulting</span>
+                </span>
+                <h3 class="home-title">
+                  <br />
+                  <br />
+                  <span>
+                    “Ideaflow is the force multiplier for business productivity
+                    in this new normal.”
+                  </span>
+                </h3>
+              </div>
+            </div>
+            <div class="home-container13">
+              <div class="home-card3">
+                <div class="home-image08">
+                  <div class="home-container14">
+                    <img
+                      alt="image"
+                      src="public/5efac266b0171beef967fcc0_avatar-%20td-400h.png"
+                      class="home-image09"
+                    />
+                  </div>
+                </div>
+                <div class="home-content4">
+                  <span class="home-caption3">
+                    <span>Tim Draper</span>
+                    <br class="home-text055" />
+                    <br />
+                    <span>Founder, DFJ</span>
+                    <br class="home-text058" />
+                    <br />
+                    <span>deaflow Investor</span>
+                  </span>
+                  <h3 class="home-title1">
+                    <br />
+                    <span>
+                      “The amount of value that can be unlocked by connecting
+                      the right people and ideas together is incredible. I’m
+                      very excited for what Ideaflow is building”.
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="home-card4"></div>
+            <div class="home-card5"></div>
+            <div class="home-card6"><div class="home-image10"></div></div>
+            <div class="home-card7"><div class="home-image11"></div></div>
+            <div class="home-card8"><div class="home-image12"></div></div>
+          </div>
+        </section>
+        <section class="home-join-us">
+          <div class="home-content5">
+            <h2 class="home-header2">We're Hiring Key Roles</h2>
+            <div class="home-main1">
+              <div class="home-heading1"></div>
+              <p class="home-caption4">Join us or refer someone!</p>
+              <a
+                href="https://www.ideaflow.io/careers"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-view2 button"
+              >
+                Join us or refer someone!
+              </a>
+            </div>
+          </div>
+          <img
+            alt="image"
+            src="public/Icons/group%202273.svg"
+            class="home-image13"
+          />
+        </section>
+        <footer class="home-footer">
+          <div class="home-main2">
+            <div class="home-branding">
+              <div class="home-container15">
+                <img
+                  src="public/5ef987561883fad47e90211c_ideaflow%20white%201-3x-200h.png"
+                  alt="image"
+                  class="home-image14"
+                />
+                <div class="home-heading2"></div>
+              </div>
+              <div class="home-socials1">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-twitter1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/twitter.svg"
+                    class="home-image15"
+                  />
+                </a>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-discord1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/Icons/discord.svg"
+                    class="home-image16"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="home-links">
+              <div class="home-list">
+                <h3 class="home-heading3">
+                  <span class="home-text063">#rabbithole</span>
+                  <br />
+                  <br />
+                </h3>
+                <div class="home-items">
+                  <span>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Memex"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link04"
+                    >
+                      Memex
+                    </a>
+                    <br class="home-text067" />
+                    <br class="home-text068" />
+                    <a
+                      href="https://zettelkasten.de/introduction/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link05"
+                    >
+                      Niklas Luhmann's Zettelkasten
+                    </a>
+                    <a
+                      href="https://zettelkasten.de/introduction/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <br class="home-text069" />
+                    </a>
+                    <br class="home-text070" />
+                    <a
+                      href="https://en.wikipedia.org/wiki/Collective_intelligence"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link07"
+                    >
+                      Collective IQ
+                    </a>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Collective_intelligence"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <br class="home-text071" />
+                    </a>
+                    <br class="home-text072" />
+                    <a
+                      href="https://en.wikipedia.org/wiki/Intelligence_amplification"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link09"
+                    >
+                      Intelligence amplification
+                    </a>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Intelligence_amplification"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <br class="home-text073" />
+                    </a>
+                    <br class="home-text074" />
+                    <a
+                      href="https://en.wikipedia.org/wiki/Giant_Global_Graph"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link11"
+                    >
+                      Tim Berners-Lee’s Giant Global Graph
+                    </a>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Giant_Global_Graph"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <br class="home-text075" />
+                    </a>
+                    <br class="home-text076" />
+                    <a
+                      href="https://en.wikipedia.org/wiki/Polymath_Project"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link13"
+                    >
+                      Polymath Project
+                    </a>
+                    <a
+                      href="https://en.wikipedia.org/wiki/Polymath_Project"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <br class="home-text077" />
+                    </a>
+                    <br class="home-text078" />
+                    <a
+                      href="http://math.mit.edu/~dspivak/CT4S.pdf"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link15"
+                    >
+                      Category Theory for Scientists
+                    </a>
+                    <a
+                      href="http://math.mit.edu/~dspivak/CT4S.pdf"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <br class="home-text079" />
+                    </a>
+                    <br class="home-text080" />
+                    <a
+                      href="http://ideaflowplan.jacobcole.net/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link17"
+                    >
+                      ideaflowplan.jacobcole.net
+                    </a>
+                    <a
+                      href="http://ideaflowplan.jacobcole.net/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <br class="home-text081" />
+                    </a>
+                    <br class="home-text082" />
+                    <a
+                      href="https://www.ideaflow.io/privacy-policy"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="home-link19"
+                    >
+                      Privacy Policy
+                    </a>
+                    <a
+                      href="https://www.ideaflow.io/privacy-policy"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <br class="home-text083" />
+                    </a>
+                    <br class="home-text084" />
+                    <br />
+                  </span>
+                  <span>
+                    <span>Niklas Luhmann's Zettelkasten</span>
+                    <br class="home-text088" />
+                    <br />
+                  </span>
+                </div>
+              </div>
+              <div class="home-list1">
+                <h3 class="home-heading4">Latest updates</h3>
+                <div class="home-items1">
+                  <button class="home-link21 button-clean button">
+                    <span>
+                      <br class="home-text091" />
+                      <br />
+                      <a
+                        href="https://medium.com/ideaflow"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        Blog
+                      </a>
+                      <a
+                        href="https://medium.com/ideaflow"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <br />
+                      </a>
+                      <br />
+                      <a
+                        href="https://www.crunchbase.com/organization/ideaflow"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        Funding
+                      </a>
+                      <a
+                        href="https://www.crunchbase.com/organization/ideaflow"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <br class="home-text095" />
+                      </a>
+                      <br class="home-text096" />
+                      <a
+                        href="https://www.youtube.com/watch?v=4feZo9PqTlo"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-link26"
+                      >
+                        Bullet View
+                      </a>
+                      <a
+                        href="https://www.youtube.com/watch?v=4feZo9PqTlo"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <br class="home-text097" />
+                      </a>
+                      <a
+                        href="https://www.youtube.com/watch?v=4feZo9PqTlo"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        class="home-link28"
+                      >
+                        Video
+                      </a>
+                      <a
+                        href="https://www.youtube.com/watch?v=4feZo9PqTlo"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <br class="home-text098" />
+                      </a>
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div class="home-list2">
+                <h3 class="home-heading5">Contact</h3>
+                <div class="home-items2">
+                  <a
+                    href="https://pleascontact@ideaflow.io"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="home-link30 button button-clean"
+                  >
+                    Email
+                  </a>
+                  <button class="home-link31 button button-clean">
+                    <span>
+                      <span>Linkedin</span>
+                      <br class="home-text106" />
+                      <br />
+                    </span>
+                  </button>
+                  <button class="home-link32 button button-clean">
+                    <span>
+                      <a
+                        href="https://www.facebook.com/ideaflowgraphs/?ref=py_c"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        Facebook
+                      </a>
+                      <a
+                        href="https://www.facebook.com/ideaflowgraphs/?ref=py_c"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        <br class="home-text109" />
+                      </a>
+                      <br />
+                    </span>
+                  </button>
+                  <a
+                    href="https://twitter.com/ideaflowgraphs"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="home-link35 button-clean button"
+                  >
+                    Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="home-socials2">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-twitter2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/twitter.svg"
+                  class="home-image17"
+                />
+              </a>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-discord2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/Icons/discord.svg"
+                  class="home-image18"
+                />
+              </a>
+            </div>
+          </div>
+          <span class="home-copyright">
+            © 20223 Character. All Rights Reserved.
+          </span>
+        </footer>
+        <div class="home-container16">
+          <div class="home-container17">
+            <script>
+              /*
+               Accordion - Code Embed
+               */
+               const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+               const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+               const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+               const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+               accordionContents.forEach((accordionContent) => {
+                   accordionContent.style.display = 'none'; //Hides all accordion contents
+               });
+
+               accordionIconsClosed.forEach((icon) => {
+                 icon.style.display = 'flex'
+               })
+
+               accordionIconsOpen.forEach((icon) => {
+                 icon.style.display = 'none'
+               })
+
+               accordionContainers.forEach((accordionContainer, index) => {
+                   accordionContainer.addEventListener('click', () => {
+                       if (accordionContents[index].style.display === 'flex') {
+                           // If the accordion is already open, close it
+                           accordionContents[index].style.display = 'none';
+                           accordionIconsClosed[index].style.display = 'flex';
+                           accordionIconsOpen[index].style.display = 'none'
+                       } else {
+                           // If the accordion is closed, open it
+                           accordionContents.forEach((accordionContent) => {
+                               accordionContent.style.display = 'none'; //Hides all accordion contents
+                           });
+
+                           accordionIconsClosed.forEach((accordionIcon) => {
+                               accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                           });
+
+                           accordionIconsOpen.forEach((accordionIcon) => {
+                             accordionIcon.style.display = 'none';
+                           })
+
+                           accordionContents[index].style.display = 'flex'; // Shows accordion content
+                           accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                           accordionIconsOpen[index].style.display = 'flex';
+                       }
+                   });
+               });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
